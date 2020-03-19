@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/a3e5d92bd9.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <nav class="topnav" id="myTopnav">
+                <a href="#home" class="hidden">Works</a>
+                <a href="#news">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-ellipsis-h"></i></a>
+            </nav>
+        </header>
+
+        <section class="second-section">
+            <h1 class="second-section__heading">Patagonia</h1>
+            <p class="second-section__text">
+                Fusce vehicula dolor arcu, sit amet blandit
+                dolor mollis nec. Donec viverra eleifend lacus,
+                vitae ullamcor.
+            </p>
+        </section>
+        <div class="third-section">
+            <img src="images/horses_large.png" alt="horses in Patagonia"
+                class="third-section__img-large hide-large-img">
+            <img src="images/horses_smaller.png" alt="horses in Patagonia"
+                class="third-section__img-smaller hide-smaller-img hide-smaller-1-img">
+            <img src="images/horses_small.png" alt="horses in Patagonia"
+                class="third-section__img-small hide-small-img hide-small-1">
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
